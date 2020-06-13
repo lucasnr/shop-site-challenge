@@ -4,7 +4,7 @@
 }
 
 .content {
-	background-image: url(../img/background.jpg);
+	background-image: url(../img/background.webp);
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -94,5 +94,11 @@
 		margin-top: auto;
 		padding-bottom: 2rem;
 		padding-top: 2rem;
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.content {
+		background-image: url(../img/background.jpg);
 	}
 }

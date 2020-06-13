@@ -36,6 +36,12 @@
 	width: 1.875rem;
 }
 
+.cart .cart__size-inputs label span {
+	overflow: hidden;
+	height: 0px;
+	width: 0px;
+}
+
 .cart .cart__size-inputs label:not(:last-of-type) {
 	margin-right: 1rem;
 }

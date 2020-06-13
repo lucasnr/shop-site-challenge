@@ -1,6 +1,7 @@
 .cart {
 	display: flex;
 	flex-direction: column;
+	margin-left: auto;
 }
 
 .cart .nav-button {
@@ -71,4 +72,10 @@
 .cart .button {
 	display: block;
 	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.cart {
+		margin-left: 0px;
+	}
 }

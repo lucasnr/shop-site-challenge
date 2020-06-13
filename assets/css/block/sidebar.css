@@ -1,3 +1,13 @@
+.sidebar,
+.sidebar nav {
+	width: 100%;
+}
+
+.sidebar nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
 .sidebar nav ul li a {
 	color: #887d7d;
 	display: block;
@@ -22,9 +32,27 @@
 }
 
 .sidebar .sidebar__footer {
-	margin: 4.5rem -0.875rem 0px -0.875rem;
+	margin: 1rem 0px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .sidebar .sidebar__footer > * {
 	margin: 0px 0.875rem;
+}
+
+@media (min-width: 768px) {
+	.sidebar,
+	.sidebar nav {
+		width: auto;
+	}
+
+	.sidebar nav ul {
+		display: block;
+	}
+
+	.sidebar .sidebar__footer {
+		display: block;
+		margin: 4.5rem -0.875rem 0px -0.875rem;
+	}
 }

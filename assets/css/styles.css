@@ -10,12 +10,12 @@ body {
 .main {
 	align-items: flex-start;
 	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 	justify-content: space-between;
-	margin-bottom: auto;
-	margin-top: auto;
 	max-width: 80rem !important;
-	padding-bottom: 2rem;
-	padding-top: 2rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
 
 .container {
@@ -74,4 +74,15 @@ body {
 .button:hover,
 .button:focus {
 	background-color: #cf7433;
+}
+
+@media (min-width: 768px) {
+	.main {
+		flex-direction: row;
+		flex-grow: initial;
+		margin-bottom: auto;
+		margin-top: auto;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+	}
 }

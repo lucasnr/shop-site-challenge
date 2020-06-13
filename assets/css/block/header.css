@@ -25,6 +25,12 @@
 	font-size: 0.875rem;
 	padding: 0px 0.75rem;
 	text-transform: uppercase;
+	transition: color 0.2s ease;
+}
+
+.header nav ul li a:hover,
+.header nav ul li a:focus {
+	color: #e67e34;
 }
 
 .header nav ul li a i {

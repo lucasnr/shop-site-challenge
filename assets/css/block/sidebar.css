@@ -12,6 +12,15 @@
 	font-weight: 700;
 }
 
+.sidebar a {
+	transition: color 0.2s ease;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+	color: #e67e34;
+}
+
 .sidebar .sidebar__footer {
 	margin: 4.5rem -0.875rem 0px -0.875rem;
 }

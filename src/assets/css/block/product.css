@@ -34,13 +34,12 @@
 @media (min-width: 420px) {
 	.product .product__title {
 		font-size: 3rem;
-		word-spacing: 35vw;
 	}
 }
 
 @media (min-width: 768px) {
 	.product {
-		max-width: 35vw;
+		margin-left: 4rem;
 		padding-bottom: 0px;
 		padding-top: 0px;
 	}
@@ -50,5 +49,11 @@
 		margin-bottom: 0px;
 		order: 3;
 		order: initial;
+	}
+}
+
+@media (min-width: 992px) {
+	.product {
+		margin-left: 13rem;
 	}
 }

@@ -11,11 +11,13 @@ body {
 }
 
 .main {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
 	margin-bottom: auto;
 	margin-top: auto;
 	max-width: 80rem !important;
-	display: flex;
-	justify-content: space-between;
+	padding-bottom: 2rem;
 }
 
 .container {
@@ -25,4 +27,31 @@ body {
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
 	width: 100%;
+}
+
+.button {
+	background-color: transparent;
+	border: none;
+	display: inline-block;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding: 0.875rem 0px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.button > * {
+	margin: 0px 0.75rem;
+}
+
+.button::before {
+	background-color: #d8d8d8;
+	content: "";
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	width: 65%;
+	z-index: -5;
 }

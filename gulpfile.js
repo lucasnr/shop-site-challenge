@@ -2,6 +2,7 @@ const { src, dest, series } = require("gulp"),
 	clean = require("gulp-clean"),
 	usemin = require("gulp-usemin"),
 	cssmin = require("gulp-cssmin"),
+	cleancss = require("gulp-clean-css"),
 	htmlmin = require("gulp-htmlmin");
 
 function cleanDist() {
@@ -17,6 +18,7 @@ function buildHtml() {
 		.pipe(
 			usemin({
 				css: [cssmin],
+				inlinecss: [cleancss],
 				html: [htmlmin({ collapseWhitespace: true })],
 			})
 		)

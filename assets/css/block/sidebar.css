@@ -1,0 +1,21 @@
+.sidebar nav ul li a {
+	color: #887d7d;
+	display: block;
+	font-size: 0.875rem;
+	padding: 0.75rem 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sidebar nav ul li:last-child a {
+	color: #e67e34;
+	font-weight: 700;
+}
+
+.sidebar .sidebar__footer {
+	margin: 4.5rem -0.875rem 0px -0.875rem;
+}
+
+.sidebar .sidebar__footer > * {
+	margin: 0px 0.875rem;
+}

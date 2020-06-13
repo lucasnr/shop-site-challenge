@@ -38,8 +38,8 @@
 }
 
 .cart .cart__size-inputs label span {
-	overflow: hidden;
 	height: 0px;
+	overflow: hidden;
 	width: 0px;
 }
 

@@ -1,0 +1,17 @@
+{
+	"name": "shop-site-challenge",
+	"version": "1.0.0",
+	"repository": "https://github.com/lucasnr/shop-site-challenge.git",
+	"author": "Lucas do Nascimento <lucasnascimentoribeiro13@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"build": "gulp default"
+	},
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-clean": "^0.4.0",
+		"gulp-cssmin": "^0.2.0",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-usemin": "^0.3.30"
+	}
+}

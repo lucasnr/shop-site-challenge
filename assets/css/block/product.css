@@ -1,4 +1,5 @@
 .product {
+	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
@@ -11,7 +12,8 @@
 	font-weight: 700;
 	margin-top: 0;
 	text-transform: uppercase;
-	word-spacing: 30vw;
+	word-spacing: 100vw;
+	width: 100%;
 }
 
 .product .product__price {
@@ -32,6 +34,7 @@
 @media (min-width: 420px) {
 	.product .product__title {
 		font-size: 3rem;
+		word-spacing: 35vw;
 	}
 }
 
@@ -45,6 +48,7 @@
 	.product .nav-button {
 		margin-left: -2rem;
 		margin-bottom: 0px;
+		order: 3;
 		order: initial;
 	}
 }

@@ -1,4 +1,9 @@
-body {
+.ie-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
 	background-image: url(../img/background.jpg);
 	background-position: center;
 	background-size: cover;
@@ -8,7 +13,7 @@ body {
 }
 
 .main {
-	align-items: flex-start;
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -42,6 +47,11 @@ body {
 	margin: 0px 0.75rem;
 }
 
+.nav-button * {
+	position: relative;
+	z-index: 10;
+}
+
 .nav-button::before {
 	background-color: #d8d8d8;
 	content: "";
@@ -51,7 +61,7 @@ body {
 	top: 0;
 	width: 65%;
 	transition: width 0.2s ease;
-	z-index: -5;
+	z-index: 0;
 }
 
 .nav-button:hover::before,

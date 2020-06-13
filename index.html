@@ -23,105 +23,109 @@
 		/>
 	</head>
 	<body>
-		<header class="header">
-			<div class="container">
-				<a href="#" class="header__brand">
-					Shop
-				</a>
+		<div class="ie-container">
+			<div class="content">
+				<header class="header">
+					<div class="container">
+						<a href="#" class="header__brand">
+							Shop
+						</a>
 
-				<nav>
-					<ul>
-						<li>
-							<a href="#">My account</a>
-						</li>
-						<li>
-							<a href="#">Search</a>
-						</li>
-						<li class="variant">
-							<a href="#" aria-label="See cart">
-								<i class="fas fa-shopping-bag"></i>
+						<nav>
+							<ul>
+								<li>
+									<a href="#">My account</a>
+								</li>
+								<li>
+									<a href="#">Search</a>
+								</li>
+								<li class="variant">
+									<a href="#" aria-label="See cart">
+										<i class="fas fa-shopping-bag"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Options">
+										<i class="fas fa-align-right"></i>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+
+				<main class="main container">
+					<aside class="sidebar">
+						<nav>
+							<ul>
+								<li><a href="#">Women</a></li>
+								<li><a href="#">Men</a></li>
+								<li><a href="#">Shoes</a></li>
+								<li><a href="#">Brand</a></li>
+							</ul>
+						</nav>
+
+						<footer class="sidebar__footer">
+							<a href="#" aria-label="Visit instagram profile">
+								<i class="fab fa-instagram"></i>
 							</a>
-						</li>
-						<li>
-							<a href="#" aria-label="Options">
-								<i class="fas fa-align-right"></i>
+							<a href="#" aria-label="Visit twitter profile">
+								<i class="fab fa-twitter"></i>
 							</a>
-						</li>
-					</ul>
-				</nav>
+							<a href="#" aria-label="Visit facebook page">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</footer>
+					</aside>
+
+					<section class="product">
+						<h1 class="product__title">
+							Brand Sweatshirt
+						</h1>
+						<h2 class="product__price">
+							$1000
+						</h2>
+
+						<a href="#" class="nav-button" aria-label="See previous product">
+							<i class="fas fa-long-arrow-alt-left"></i>
+							<span>Prev</span>
+						</a>
+					</section>
+
+					<section class="cart">
+						<a href="#" class="nav-button" aria-label="See next product">
+							<span>Next</span>
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</a>
+						<form>
+							<div class="cart__size-inputs">
+								<input type="radio" name="size" id="size-s" />
+								<label for="size-s">S<span>Choose small size</span></label>
+								<input type="radio" name="size" id="size-m" checked />
+								<label for="size-m">M<span>Choose medium size</span></label>
+								<input type="radio" name="size" id="size-l" />
+								<label for="size-l">L<span>Choose large size</span></label>
+							</div>
+							<div class="cart__amount">
+								<button type="button" aria-label="Decrease amount on cart">
+									<i class="fas fa-minus"></i>
+								</button>
+								<input
+									class="cart__amount__input"
+									type="text"
+									readonly
+									value="1"
+									aria-label="Amount on cart"
+								/>
+								<button type="button" aria-label="Increase amount on cart">
+									<i class="fas fa-plus"></i>
+								</button>
+							</div>
+							<button type="submit" class="button">Add to cart</button>
+						</form>
+					</section>
+				</main>
 			</div>
-		</header>
-
-		<main class="main container">
-			<aside class="sidebar">
-				<nav>
-					<ul>
-						<li><a href="#">Women</a></li>
-						<li><a href="#">Men</a></li>
-						<li><a href="#">Shoes</a></li>
-						<li><a href="#">Brand</a></li>
-					</ul>
-				</nav>
-
-				<footer class="sidebar__footer">
-					<a href="#" aria-label="Visit instagram profile">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="#" aria-label="Visit twitter profile">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="#" aria-label="Visit facebook page">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-				</footer>
-			</aside>
-
-			<section class="product">
-				<h1 class="product__title">
-					Brand Sweatshirt
-				</h1>
-				<h2 class="product__price">
-					$1000
-				</h2>
-
-				<a href="#" class="nav-button" aria-label="See previous product">
-					<i class="fas fa-long-arrow-alt-left"></i>
-					<span>Prev</span>
-				</a>
-			</section>
-
-			<section class="cart">
-				<a href="#" class="nav-button" aria-label="See next product">
-					<span>Next</span>
-					<i class="fas fa-long-arrow-alt-right"></i>
-				</a>
-				<form>
-					<div class="cart__size-inputs">
-						<input type="radio" name="size" id="size-s" />
-						<label for="size-s">S<span>Choose small size</span></label>
-						<input type="radio" name="size" id="size-m" checked />
-						<label for="size-m">M<span>Choose medium size</span></label>
-						<input type="radio" name="size" id="size-l" />
-						<label for="size-l">L<span>Choose large size</span></label>
-					</div>
-					<div class="cart__amount">
-						<button type="button" aria-label="Decrease amount on cart">
-							<i class="fas fa-minus"></i>
-						</button>
-						<input
-							class="cart__amount__input"
-							type="text"
-							readonly
-							value="1"
-							aria-label="Amount on cart"
-						/>
-						<button type="button" aria-label="Increase amount on cart">
-							<i class="fas fa-plus"></i>
-						</button>
-					</div>
-					<button type="submit" class="button">Add to cart</button>
-				</form>
-			</section>
-		</main>
+		</div>
 	</body>
 </html>

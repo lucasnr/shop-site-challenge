@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="./assets/css/block/header.css" />
 		<link rel="stylesheet" href="./assets/css/block/sidebar.css" />
 		<link rel="stylesheet" href="./assets/css/block/product.css" />
+		<link rel="stylesheet" href="./assets/css/block/cart.css" />
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
@@ -83,29 +84,32 @@
 					$1000
 				</h2>
 
-				<a href="#" class="button">
+				<a href="#" class="nav-button">
 					<i class="fas fa-long-arrow-alt-left"></i>
 					<span>Prev</span>
 				</a>
 			</section>
 
 			<section class="cart">
-				<a href="#" class="button">
+				<a href="#" class="nav-button">
 					<span>Next</span>
 					<i class="fas fa-long-arrow-alt-right"></i>
 				</a>
 				<form>
-					<div class="cart__inputs">
+					<div class="cart__size-inputs">
 						<input type="radio" name="size" id="size-s" />
-						<input type="radio" name="size" id="size-m" />
-						<input type="radio" name="size" id="size=l" />
+						<label for="size-s">S</label>
+						<input type="radio" name="size" id="size-m" checked />
+						<label for="size-m">M</label>
+						<input type="radio" name="size" id="size-l" />
+						<label for="size-l">L</label>
 					</div>
 					<div class="cart__amount">
 						<button type="button"><i class="fas fa-minus"></i></button>
 						<input class="cart__amount__input" type="text" readonly value="1" />
 						<button type="button"><i class="fas fa-plus"></i></button>
 					</div>
-					<button type="submit">Add to cart</button>
+					<button type="submit" class="button">Add to cart</button>
 				</form>
 			</section>
 		</main>

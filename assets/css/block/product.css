@@ -1,7 +1,6 @@
 .product {
 	max-width: 35vw;
 	width: 100%;
-	margin-bottom: 3.5rem;
 }
 
 .product .product__title {
@@ -22,6 +21,6 @@
 	margin-top: 1rem;
 }
 
-.product .button {
+.product .nav-button {
 	margin-left: -2rem;
 }
